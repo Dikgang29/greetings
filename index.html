@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="greet.css">
+    <title>Greetings</title>
+</head>
+<body>
+    
+    <h2 class="greet">Greeting</h2>
+
+<div id="fName">
+    <label for="fistName" >First Name:</label>
+    <input type="text"  class="nameType"   value="">
+
+</div>
+    <div class="radioInfo">
+        <p> Please Select a langauge </p>
+
+        <input type="radio" name="language" class="radioLanguage" value="english">
+        <label for="English"> English</label>
+        <input type="radio" name="language" class="radioLanguage" value="sepedi">
+        <label for="Sepedi">Sepedi</label>
+        <input type="radio" name="language" class="radioLanguage" value="tsonga">
+        <label for="Tsonga" >Tsonga</label>
+
+    </div>
+
+    <div class="button">
+    <button class="greetBtn">GREET</button>
+</div>
+
+<div class="printResults">
+    <span>Enter a name and select a language</span>
+
+</div>
+
+<div class="greetCount"> COUNT: <span class="spanCount">0</span></div>
+
+
+
+
+
+
+<script src="greet.js"></script>
+    <script src="greet.dom.js"></script>
+    
+</body>
+</html>
