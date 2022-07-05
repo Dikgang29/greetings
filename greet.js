@@ -5,6 +5,8 @@ function Greeting(){
 
 
    var greetedArray = [];
+   let newArry = [];
+
   
 
    function greet(firstName){
@@ -36,9 +38,13 @@ function Greeting(){
       greetedArray.push(firstName);
         return 'Minjhani, '+firstName; }
    }
+
+   function check(){
+      return greetedArray;
+   }
    
    function storedArray(){
-      let newArry = [];
+      //  let newArry = [];
 
       greetedArray.forEach(elem => {
          if(!newArry.includes(elem)){
@@ -50,11 +56,17 @@ function Greeting(){
       
    }
 
+   function assign(parameter){
+      greetedArray = parameter;
+   }
+
    return {
 
       greet,
       greetSepedi,
       greetTsonga,
-      storedArray
+      storedArray,
+      check,
+      assign
    }
 }
