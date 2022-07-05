@@ -9,7 +9,7 @@ function Greeting(){
 
   
 
-   function greet(firstName){
+   function greetEnglish(firstName){
       if(firstName === '') return "Please enter a name";
       else if(firstName >=0 || firstName<=0) return "Error, Please enter a name NOT a number"
 
@@ -62,7 +62,7 @@ function Greeting(){
 
    return {
 
-      greet,
+      greetEnglish,
       greetSepedi,
       greetTsonga,
       storedArray,
