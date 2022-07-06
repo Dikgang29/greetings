@@ -22,8 +22,8 @@ function Greeting(){
 
    function greetSepedi(firstName){
 
-      if(firstName === '') return "Please enter a name";
-      else if(firstName >=0 || firstName<=0) return "Error, Please enter a name NOT a number"
+      if(firstName === '') return "Kgopela o tsenye leina";
+      else if(firstName >=0 || firstName<=0) return "Phosho, kgopela o tsenye leina e sego nomoro"
      else { 
       greetedArray.push(firstName);
         return 'Dumela, '+firstName;
@@ -32,8 +32,8 @@ function Greeting(){
 
    function greetTsonga(firstName){
 
-      if(firstName === '') return "Please enter a name";
-      else if(firstName >=0 || firstName<=0) return "Error, Please enter a name NOT a number"
+      if(firstName === '') return "Ndza kombela mumanghenelo vito";
+      else if(firstName >=0 || firstName<=0) return "Xihoxo, Mumanghenelo vito a u nomboro"
      else { 
       greetedArray.push(firstName);
         return 'Minjhani, '+firstName; }
@@ -56,9 +56,9 @@ function Greeting(){
       
    }
 
-   function assign(parameter){
-      greetedArray = parameter;
-   }
+   // function assign(parameter){
+   //    greetedArray = parameter;
+   // }
 
    return {
 
@@ -67,6 +67,6 @@ function Greeting(){
       greetTsonga,
       storedArray,
       check,
-      assign
+      // assign
    }
 }

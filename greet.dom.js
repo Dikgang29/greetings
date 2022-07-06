@@ -54,7 +54,8 @@ function greetElements (){
     if(radioCheck){ 
    
     if(radioCheck.value === 'english'){
-        printMessage(greet1, "greetEnglish")
+        printMessage(greet1, "greetEnglish");
+
         
        
     
@@ -75,8 +76,8 @@ if(!radioCheck){
     
 }
 
+removeItemsFromLocalStorage;
     setItemsToLocalStorage(greet1.storedArray());
-    removeItemsFromLocalStorage;
     
 
 
@@ -85,10 +86,15 @@ if(!radioCheck){
 spanCountElem.innerHTML = listNames.length;
 
 function removeItemsFromLocalStorage (){
+    getItemsFromLocalStorgae;
     localStorage.removeItem("names");
-    spanCountElem.innerHTML = 0;
+    spanCountElem.innerHTML = listNames.length;
+    
+    console.log(listNames.length);
 
 }
+    console.log(listNames.length);
+
 
 
 
