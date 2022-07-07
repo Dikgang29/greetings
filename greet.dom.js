@@ -83,18 +83,19 @@ removeItemsFromLocalStorage;
 
 
 }
-spanCountElem.innerHTML = listNames.length;
+
 
 function removeItemsFromLocalStorage (){
     getItemsFromLocalStorgae;
-    localStorage.removeItem("names");
+    localStorage.removeItem('names');
     spanCountElem.innerHTML = listNames.length;
     
     console.log(listNames.length);
 
 }
-    console.log(listNames.length);
+console.log(listNames.length);
 
+// console.log(JSON.parse(localStorage.getItem("names")));
 
 
 
