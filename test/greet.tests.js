@@ -3,16 +3,24 @@ describe('The Greet Function' , function(){
 
         const greeting  = Greeting();
 
-        assert.equal('Hello, Dikgang',greeting.greet('Dikgang'));
+        assert.equal('Hello, Dikgang',greeting.greetEnglish('Dikgang'));
 
        // assert.deepEqual([2,2],[2,2]);
+    });
+    it('should return a greetings message with the first letter being capitelized and the rest small cases' , function(){
+
+        const greeting  = Greeting();
+
+        assert.equal('Hello, Dikgang',greeting.greetEnglish('dIKGANG'));
+
+    
     });
 
     it('if a number is entered , it should return an error message asking the user to enter a correct input ' , function(){
 
         const greeting  = Greeting();
 
-        assert.equal('Error, Please enter a name NOT a number',greeting.greet(5));
+        assert.equal('Error, Please enter a name NOT a number',greeting.greetEnglish(5));
 
        // assert.deepEqual([2,2],[2,2]);
     });
@@ -21,7 +29,7 @@ describe('The Greet Function' , function(){
 
         const greeting  = Greeting();
 
-        assert.equal("Please enter a name",greeting.greet(''));
+        assert.equal("Please enter a name",greeting.greetEnglish(''));
 
        // assert.deepEqual([2,2],[2,2]);
     });

@@ -13,7 +13,7 @@ const greet1 = Greeting();
 
 // getting items from the Local storage => made the variable global so that i call access it from other functions
 var listNames = localStorage.getItem("names") ? JSON.parse(localStorage.getItem("names")) : [];
-
+spanCountElem.innerHTML = listNames.length;
 
 
 
@@ -40,7 +40,7 @@ function setItemsToLocalStorage(names){
 function printMessage(greet1, key){
     
     printElemet.innerHTML = greet1[key](nameTypeElem.value);
-    spanCountElem.innerHTML = listNames.length;
+    // spanCountElem.innerHTML = listNames.length;
 }
 
 
@@ -72,11 +72,11 @@ function greetElements (){
 }
 if(!radioCheck){
     printElemet.innerHTML = 'ENTER A NAME AND SELECT A LANGUAGE';
-    spanCountElem.innerHTML = listNames.length;
+    // spanCountElem.innerHTML = listNames.length;
     
 }
 
-removeItemsFromLocalStorage;
+// removeItemsFromLocalStorage;
     setItemsToLocalStorage(greet1.storedArray());
     
 
@@ -86,16 +86,17 @@ removeItemsFromLocalStorage;
 
 
 function removeItemsFromLocalStorage (){
-    getItemsFromLocalStorgae;
+   
     localStorage.removeItem('names');
+    greet1.resetStoredNames();
+    listNames = [];
+
     spanCountElem.innerHTML = listNames.length;
     
-    console.log(listNames.length);
+
 
 }
-console.log(listNames.length);
 
-// console.log(JSON.parse(localStorage.getItem("names")));
 
 
 
