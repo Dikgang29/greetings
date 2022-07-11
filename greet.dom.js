@@ -71,6 +71,7 @@ function greetElements (){
 
 }
 if(!radioCheck){
+    printElemet.classList.add('erroMessage');
     printElemet.innerHTML = 'ENTER A NAME AND SELECT A LANGUAGE';
     // spanCountElem.innerHTML = listNames.length;
     
